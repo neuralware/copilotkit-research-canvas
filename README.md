@@ -1,3 +1,5 @@
+[![Open in Dev Containers](https://img.shields.io/static/v1?label=Dev%20Containers&message=Open&color=blue)](https://vscode.dev/redirect?url=vscode://ms-vscode-remote.remote-containers/cloneInVolume?url=https://github.com/neuralware/copilotkit-research-canvas)
+
 # Full-stack AI Agents with LangGraph & CopilotKit
 
 A streamlined implementation of CopilotKit's [coagents-research-canvas](https://github.com/CopilotKit/CopilotKit/tree/main/examples/coagents-research-canvas) example, designed for easy reproduction and deployment.
