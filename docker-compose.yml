@@ -1,0 +1,33 @@
+version: '3.8'
+
+services:
+  ui:
+    build:
+      context: ./ui
+      dockerfile: Dockerfile
+    env_file:
+      - ./ui/.env
+    volumes:
+      - ./ui:/app
+      - /app/node_modules
+    ports:
+      - "3000:3000"
+    environment:
+      - FORCE_COLOR=1
+      - PNPM_YES=true
+
+  agent:
+    build:
+      context: ./agent
+      dockerfile: Dockerfile
+    env_file:
+      - ./agent/.env
+    volumes:
+      - ./agent:/app
+      - /app/.venv
+    ports:
+      - "8000:8000"
+
+networks:
+  default:
+    name: app-network

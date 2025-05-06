@@ -1,0 +1,45 @@
+Elysia
+I'll provide appropriate .dockerignore files for both the UI (Node.js) and Agent (Python) directories to optimize your Docker builds.
+
+1. For UI (Node.js) - ui/.dockerignore:
+
+# Dependencies
+node_modules
+.pnpm-store
+.npm
+.yarn
+
+# Build outputs
+dist
+build
+.next
+out
+
+# Development
+.git
+.gitignore
+README.md
+*.log
+.env.local
+.env.*.local
+
+# IDE and Editor files
+.vscode
+.idea
+*.swp
+*.swo
+.DS_Store
+
+# Testing
+coverage
+.nyc_output
+__tests__
+test
+tests
+
+# Misc
+.dockerignore
+Dockerfile
+docker-compose.yml
+*.md
+.cache
